@@ -35,7 +35,7 @@
 
 <script type="modul">
   
-  import {ambilDaftarProduk} from'./main.js';
+  import {ambilDaftarProduk, formatAngka} from'./main.js';
   
   $(document).ready(async function(){
    let elemDaftar = $("#daftar-produk > tbody");
@@ -47,7 +47,7 @@
       '<tr>' +
       '</td>' + nomer + '</td>' +  
       '</td>' + data.nama + '</td>' + 
-      '</td>' + data.harga + '</td>' + 
+      '</td>' + formatAngka(data.harga) + '</td>' + 
       '</td>' + data.stok + '</td>' +
       '</tr>'
       );
