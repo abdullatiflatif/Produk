@@ -40,17 +40,19 @@
   $(document).ready(async function(){
    let elemDaftar = $("#daftar-produk > tbody");
    let daftarProduk = await ambilDaftarProduk();
+   let nomor = 1;
    
-  daftarProduk.forEach((data){
+  daftarProduk.forEach((data){ => }
     elemenDaftar.append(
       '<tr>' +
-      '</td>' + '</td>' +  
+      '</td>' + nomer + '</td>' +  
       '</td>' + data.nama + '</td>' + 
       '</td>' + data.harga + '</td>' + 
       '</td>' + data.stok + '</td>' +
       '</tr>'
       );
   });
+  nomor = nomor + 1;
   }):
 </script>
 
