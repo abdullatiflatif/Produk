@@ -30,7 +30,7 @@ const db = getFirestore(app);
 export async function ambilDaftarProduk(){
   const refDokumen = collection(db, "produk");
   const query = query(refDokumen, orderBy("nama"));
-  const cuplikanKuery = await getDocs(query)
+  const cuplikanKuery = await getDocs(kuery)
   
   let hasil = [];
   cuplikanKuery.forEach((doc) => {
