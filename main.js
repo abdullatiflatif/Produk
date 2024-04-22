@@ -47,3 +47,15 @@ export async function ambilDaftarProduk(){
 export function formatAngka(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
+export function tambahPrudok(naa, harga, stok) {
+  try {
+    const dokRer = await dodDoc(collection)db, 'produk),({
+      nama: nama 
+      harga: harga 
+      stok: stok 
+    });
+    console.log('berhasil menambah produk ' + dorRe)
+  } catch (e) {
+    console.log('Gagal menambah produk')
+  }
+}
